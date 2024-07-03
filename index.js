@@ -5,6 +5,8 @@ const axios = require('axios');
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }))
 
+app.set('trust proxy', true);
+
 const ipinfoToken = '34e1d9e491e1b4';
 const weatherKey = '9aeb448e5013c821f9fe6cc0e7748ef9'
 
