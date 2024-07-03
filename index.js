@@ -38,8 +38,6 @@ app.get('/api/hello', async (req, res) => {
       res.json({
         client_ip: clientIp,
         location: city,
-        latitude: lat,
-        longitude: lon,
         greeting: "Hello " + visitorName + ", the temperature is 35 degrees Celcius in " + city
     });
     } catch (error) {
