@@ -16,8 +16,8 @@ app.get('/api/hello', async (req, res) => {
         return visitorName.replace(/^["'](.+(?=["']$))["']$/, '$1');
     };
 
-    //const clientIp = req.ip; for deployment
-    const clientIp = '196.27.128.80'; //comment this out
+    //const clientIp = 196.27.128.80; for deployment
+    const clientIp = req.ip; //comment this out
     const visitorName = sanitizeVisitorName(req.query.visitor_name || 'Guest');
 
 
