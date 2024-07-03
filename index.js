@@ -50,4 +50,3 @@ app.get('/api/hello', async (req, res) => {
 app.listen(3000, () => {
     console.log("listening on port 3000");
 })
-// latitude, longitude = 7.4824,4.5603
